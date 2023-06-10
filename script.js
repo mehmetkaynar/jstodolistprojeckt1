@@ -10,6 +10,7 @@ addToDoButton.addEventListener("click", function () {
   toDoContainer.appendChild(paragraph); //? kutucukta yazdigim paragrafi otomatik asagikadi divimin icine eklemek icin yazdim.
   paragraph.innerHTML = inputText.value; //? paragrafa yazdigimi asagidaki dive koydum.
   inputText.value = ""; //?paragrafta yazdigimi otomatik olarak silmek icin yazdim.
+  inputText.focus(); //? inputun icine yazdigimiz seyi ekle yada clear yaptiktan sonra direk tekrar inputa focuslandim.
 
   paragraph.addEventListener("click", function () {
     paragraph.style.textDecoration = "line-through"; //?textin uzerine bir defa tikladigimda uzerine cizgi cizilmesi icin yaptim.
